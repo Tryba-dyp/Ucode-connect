@@ -1,0 +1,52 @@
+
+table {
+    border-collapse: collapse;
+}
+
+caption {
+    text-align: left;
+}
+
+thead {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+    border: 2px solid gainsboro;
+    padding: 10px;
+}
+
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 25px;
+}
+
+.soul-stone {
+    background-color: #d79339;
+}
+
+.time-stone {
+    background-color: #008100;
+}
+
+.space-stone {
+    background-color: #005693;
+}
+
+.mind-stone {
+    background-color: #ffff00;
+}
+
+.reality-stone {
+    background-color: #c22429;
+}
+
+.power-stone {
+    background-color: #8276b8;
+}
+

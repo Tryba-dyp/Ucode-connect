@@ -1,0 +1,21 @@
+
+.search-box {
+    display: flex;
+    height: 2em;
+}
+
+button, input[type="text"] {
+    padding: 0 10px;
+    color: green;
+    font-size: 14px;
+}
+
+input {
+    border: 2px solid rgb(66, 66, 248);
+    border-radius: 5px;
+    width: 100%;
+}
+
+button:hover, input[type="text"]:hover {
+    color: red;
+}

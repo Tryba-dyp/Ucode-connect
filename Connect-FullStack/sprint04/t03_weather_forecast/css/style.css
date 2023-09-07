@@ -1,0 +1,52 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+}
+
+#city {
+  background-color: royalblue;
+  margin: 0;
+  padding: 10px;
+  color: aliceblue;
+  border-radius: 15px 15px 0 0;
+  border: 1px solid black;
+}
+
+#forecast {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 250px);
+  gap: 10px;
+  background-color: rgb(249, 249, 204);
+  padding: 20px;
+  border: 1px solid;
+}
+
+.forecast-day {
+  height: 250px;
+  border-radius: 5px;
+  border: 2px solid;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.forecast-date {
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+}
+
+.forecast-day img {
+  height: 170px;
+}
+
+.forecast-temperature {
+  font-size: 25px;
+  font-weight: bold;
+  border-top: 1px solid;
+  padding-top: 15px;
+}

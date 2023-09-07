@@ -1,0 +1,14 @@
+
+body {
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+}
+
+.image {
+    margin: auto;
+}
+
+.image:hover {
+    transform: rotate(-30deg);
+}

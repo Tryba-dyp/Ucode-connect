@@ -1,0 +1,122 @@
+
+body {
+    background-color: lightgreen;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+h1, h3{
+    text-align: center;
+}
+
+.grid, .big-grid{
+    display: grid;
+    margin: 0px 60px;
+    gap: 30px;
+    justify-items: center;
+}
+
+.item {
+    width: calc(100% - 30px);
+    min-height: 270px;
+    padding: 15px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+
+.item h1 {
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+
+table td, table th {
+    border: 1px solid black;;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    height: 30px;
+    margin-top: 5px;
+    display: block;
+}
+
+.background-example {
+    text-align: center;
+    height: 50px;
+    background-color: red;
+}
+
+.opacity-example-1 {
+    margin-top: 15px;
+    height: 50px;
+    background-color: green;
+}
+
+.opacity-example-2 {
+    height: 50px;
+    background-color: green;
+    opacity: 0.5;
+}
+
+.line-height-example {
+    margin-top: 35px;
+    line-height: 1.5;
+}
+
+.text-transform-example {
+    margin-top: 35px;
+}
+
+.text-transform-example .with-transform {
+    text-transform: uppercase;
+}
+
+.border-example {
+    margin-top: 35px;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    border-bottom:3px solid red;
+}
+
+.font-size-example {
+    font-size: 24px;
+}
+
+@media screen and (min-width: 320px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .big-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .big-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .big-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

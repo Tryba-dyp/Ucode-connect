@@ -1,0 +1,43 @@
+
+.stone {
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  transform: rotate(45deg);
+  border: 2px dashed;
+  position: absolute;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.draggable {
+  cursor: move;
+  border: transparent;
+}
+
+.dragging {
+  cursor: move;
+  opacity: 0.8;
+}

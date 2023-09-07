@@ -1,0 +1,45 @@
+
+.page-title {
+  text-align: center;
+}
+
+img {
+  width: 300px;
+  height: 100%;
+  padding: 15px;
+}
+
+.films-list-container {
+  display: flex;
+  width: 70%;
+  min-height: 500px;
+  background-color: lightgray;
+  margin: auto;
+}
+
+#titles {
+  list-style: none;
+  padding: 15px;
+  width: 20%;
+}
+
+#titles li {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#film-info {
+  display: none;
+  padding: 15px;
+  width: 100%;
+  border-left: 2px solid lightskyblue;
+
+}
+
+#film-info h2 {
+  margin-top: 0;
+}
+
+.label {
+  font-weight: bold;
+}

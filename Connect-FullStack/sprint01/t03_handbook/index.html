@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Handbook</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Handbook</h1>
+        <h3>HTML</h3>
+        <div class="grid">
+            <div class="item">
+                <p><b>h1</b></p>
+                <p>The h1 to h6 tags are used to define HTML headings</p>
+                <code>&lt;h1&gt;Title&lt;/h1&gt;</code>
+                <h1>Title</h1>
+            </div>
+            <div class="item">
+                <p><b>table</b></p>
+                <p>defines an HTML table</p>
+                <code>&lt;table&gt;&lt;/table&gt;</code>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Country</th>
+                            <th>Country</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="item">
+                <p><b>hr</b></p>
+                <p>draws a horizontal line</p>
+                <code>&lt;hr&gt;</code>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh</p>
+                <hr>
+            </div>
+            <div class="item">
+                <p><b>input</b></p>
+                <p>Designed to create text fields, various buttons, radio buttons and checkboxes</p>
+                <code>&lt;input attributes&gt;</code>
+                
+                <p>Examples</p>
+                <label><code>&lt;input type="text"&gt;</code>
+                    <input type="text">
+                </label>
+                <label><code>&lt;input type="radio"&gt;</code>
+                    <input type="radio">
+                </label>
+                <label><code>&lt;input type="checkbox"&gt;</code>
+                    <input type="checkbox">
+                </label>
+            </div>
+            <div class="item">
+                <p><b>button</b></p>
+                <p>Clickable button</p>
+                <code>&lt;button&gt;Button&lt;/button&gt;</code>
+                <button>Button</button>
+            </div>
+        </div>
+
+        <h3>CSS</h3>
+        <div class="grid">
+            <div class="item">
+                <p><b>background</b></p>
+                <p>specifies the background of an element</p>
+                <code>background:[];</code>
+                <div class="background-example">
+                    <p>Text</p>
+                </div>
+            </div>
+            <div class="item">
+                <p><b>opacity</b></p>
+                <p>specifies the opacity/transparency of an element</p>
+                <code>opacity: 0.5;</code>
+                <div class="opacity-example-1"></div>
+                <div class="opacity-example-2"></div>
+            </div>
+            <div class="item">
+                <p><b>line-height</b></p>
+                <p>specifies the height of a line</p>
+                <code>line-height: 1.5;</code>
+                <div class="line-height-example">
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum dolor.</p>
+                </div>
+            </div>
+            <div class="item">
+                <p><b>text-transform</b></p>
+                <p>controls the capitalization on text</p>
+                <code>text-transform: uppercase;</code>
+                <div class="text-transform-example">
+                    <p>text without transform</p>
+                    <p class="with-transform">text with transform</p>
+                </div>
+            </div>
+            <div class="item">
+                <p><b>border</b></p>
+                <p>specifies the style of the outline</p>
+                <code>border-bottom:3px solid red;</code>
+                <div class="border-example"></div>
+            </div>
+            <div class="item">
+                <p><b>font-size</b></p>
+                <p>specifies the font size of the item.<br>%,px,rem,inherit</p>
+                <code>font-size: 24px;</code>
+                <p class="font-size-example">Font size 24px</p>
+            </div>
+        </div>
+
+        <h3>PROTOCOLS</h3>
+        <div class="big-grid">
+            <div class="item">
+                <p><b>HTTP methods</b></p>
+                <p>GET: The GET method is used to retrieve a resource from the server. 
+                    When sending a GET request, the server returns the requested data in the response. 
+                    GET requests should not have any side effects and are considered safe, 
+                    meaning they should not change the server's state.</p>
+                <p>POST: The POST method is used to send data to the server for processing. 
+                    It is often used to create new resources or submit data to perform a specific operation. 
+                    POST requests can have side effects and change the server's state.</p>
+                <p>PUT: The PUT method is used to completely update an existing resource on the server. 
+                    It replaces the existing data with the new data provided in the request.</p>
+                <p>DELETE: The DELETE method is used to delete a specified resource on the server. 
+                    When sending a DELETE request, the server removes the specified resource.</p>
+                <p>PATCH: The PATCH method is used to partially update an existing resource on the server. 
+                    It is typically used when you want to make a small modification to an existing resource without replacing the entire resource.</p>
+            </div>
+            <div class="item">
+                <p><b>HTTP status code</b></p>
+                <p>1xx (Informational):<br>
+                    These status codes indicate that the server has received the request and is continuing the process. 
+                    They are informational and not typically used in general web development.<br>
+                    Example: 100 Continue.
+                </p>
+                <p>2xx (Success):<br>
+                    These status codes indicate that the request was successfully received, understood, and processed by the server.<br>
+                    Example: 200 OK: The request was successful.
+                </p>
+                <p>3xx (Redirection):<br>
+                    These status codes indicate that further action is needed to complete the request.<br>
+                    Example: 304 Not Modified: The client can use its cached version of the resource.
+                </p>
+                <p>4xx (Client Error):<br>
+                    These status codes indicate that there was an error on the client's side of the request.<br>
+                    Example: 404 Not Found: The requested resource could not be found on the server.
+                </p>
+                <p>5xx (Server Error):<br>
+                    These status codes indicate that there was an error on the server's side of the request.<br>
+                    Example: 500 Internal Server Error: An unexpected error occurred on the server.
+                </p>
+            </div>
+            <div class="item">
+                <p><b>DNS list by types</b></p>
+                <p>A (Address) Record:<br>
+                    Associates a domain name with an IPv4 address.
+                    Used to map a hostname to an IP address.</p>
+                <p>AAAA (IPv6 Address) Record:<br>
+                    Associates a domain name with an IPv6 address.
+                    Used to map a hostname to an IPv6 address.</p>
+                <p>CNAME (Canonical Name) Record:<br>
+                    Creates an alias or alternate name for an existing record.
+                    Used to map multiple domain names to a single canonical (primary) domain name.</p>
+                <p>MX (Mail Exchanger) Record:<br>
+                    Specifies the mail server responsible for accepting incoming emails for a domain.
+                    Used to route email messages to the appropriate mail servers.</p>
+                <p>TXT (Text) Record:<br>
+                    Stores text-based information associated with a domain.
+                    Used for various purposes like domain verification, SPF (Sender Policy Framework) records, and more.</p>
+                <p>NS (Name Server) Record:<br>
+                    Specifies the authoritative DNS servers for a domain.
+                    Used to delegate the responsibility of resolving the domain to specific name servers.</p>
+                <p>SOA (Start of Authority) Record:<br>
+                    Provides administrative information about a DNS zone.
+                    Contains details such as the primary name server, contact email, serial number, and more.</p>
+                <p>PTR (Pointer) Record:<br>
+                    Performs the reverse mapping of an IP address to a domain name.
+                    Used in reverse DNS lookups.</p>
+                <p>SRV (Service) Record:<br>
+                    Specifies the location of specific services available in a domain.
+                    Used to define the hostname and port number of services like SIP, XMPP, and more.</p>
+                <p>CAA (Certification Authority Authorization) Record:<br>
+                    Specifies which certificate authorities (CAs) are authorized to issue SSL/TLS certificates for a domain.
+                    Used to enforce certificate issuance policies.</p>
+            </div>
+            <div class="item">
+                <p><b>Identifying IP</b></p>
+                <p>To determine the IP address for domain names, you can use the "ping" command on the operating system's command line.</p>
+                <p>1. Open Terminal</p>
+                <p>2. At the command prompt, type "ping" followed by the domain name for which you want to determine the IP address.</p>
+                <p>As a result, you will receive a string containing the name and IP. For example for google.com:<br>
+                    PING google.com (216.58.209.206) 56(84) bytes of data.</p>
+            </div>
+        </div>
+    </body>
+</html>
